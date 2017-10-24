@@ -3,7 +3,10 @@ import React, { Component } from 'react';
 import { compose, withProps, withStateHandlers } from "recompose";
 import FaAnchor from "react-icons/lib/fa/anchor";
 import { withScriptjs, withGoogleMap, GoogleMap, Marker, InfoWindow } from "react-google-maps"
+import Mark1 from "./Marker1.png";
+import xian from "./xian.jpg";
 
+var content = "maybe this time";
 const MyMapComponent = compose(
   withProps({
     googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places",
@@ -26,11 +29,20 @@ const MyMapComponent = compose(
     defaultCenter={{ lat: 40.452906, lng: 190.818206 }}
   >
     <Marker
-      position={{ lat: 40.397, lng: 150.644 }}
+      options={{icon: Mark1}} 
+      position={{ lat: 34.4076645, lng: 108.742099 }}
       onClick={props.onToggleOpen}
     >
-      {props.isOpen && <InfoWindow onCloseClick={props.onToggleOpen}>
-        <text>This is the first place I visit</text>
+      {props.isOpen && <InfoWindow
+                    onCloseClick={props.onToggleOpen}
+                    >
+        <content1> 
+          <text id = "maptitle1">Xianyang, Shaanxi, China - Where My Journey Starts</text>
+          <br/>
+          <p><img id = "xian" src = {xian}/>
+          <mapdiscription1> This is where I start my life </mapdiscription1>
+          </p>
+        </content1>
       </InfoWindow>}
     </Marker>
   </GoogleMap>

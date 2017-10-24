@@ -204,6 +204,7 @@ tree {
     height: 170px; /*this makes sure to maintain the aspect ratio*/
     margin: 20px;
     padding: 0px;
+    border-radius: 15%;
 }
 
 li1 {
@@ -289,9 +290,42 @@ man
 mapinfo{
     position: absolute;
     margin: auto;
-    top: 1500px;
+    top: 1550px;
     right: 0px;
     bottom: 0;
     left: 0px;
     width: 1200px;
+}
+
+#maptitle1 {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+    position: relative;
+    margin:auto;
+}
+
+#xian {
+    height:170px;
+    width: 340px;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    border-radius: 30%;
+}
+
+content1 {
+    left:10px;
+    right:10px;
+}
+
+mapdiscription1{
+    font-family: "Sans";
+    font-size: 15pt;
+    line-height: 200%;
+    position: absolute;
+    margin:auto;
+    text-align: center;
+    color: black;
+    padding-left:10px;
 }
