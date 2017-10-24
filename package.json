@@ -1,5 +1,5 @@
 {
-  "name": "jkweb",
+  "name": "first_personal_web_app",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,3 +17,4 @@
     "eject": "react-scripts eject"
   }
 }
+
