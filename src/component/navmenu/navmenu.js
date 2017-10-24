@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import man from "./icon/man.png";
 import $ from "jquery";
-import ScrollableAnchor from 'react-scrollable-anchor'
-import { configureAnchors } from 'react-scrollable-anchor'
 var scrollToElement = require('scroll-to-element');
 
 

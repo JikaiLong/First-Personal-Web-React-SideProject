@@ -1,17 +1,16 @@
 
 import React, { Component } from 'react';
 import { compose, withProps, withStateHandlers } from "recompose";
-import FaAnchor from "react-icons/lib/fa/ancho";
+import FaAnchor from "react-icons/lib/fa/anchor";
+import { withScriptjs, withGoogleMap, GoogleMap, Marker, InfoWindow } from "react-google-maps"
 
-import {
-  withScriptjs,
-  withGoogleMap,
-  GoogleMap,
-  Marker,
-  InfoWindow,
-} from "react-google-maps";
-
-const MapWithAMakredInfoWindow = compose(
+const MyMapComponent = compose(
+  withProps({
+    googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places",
+    loadingElement: <div style={{ height: `100%`, width: '100%' }}/>,
+    containerElement: <div style={{ height: `400px`, width: '100%'}} />,
+    mapElement: <div style={{ height: `100%`, width: '100%'}} />,
+  }),
   withStateHandlers(() => ({
     isOpen: false,
   }), {
@@ -23,39 +22,27 @@ const MapWithAMakredInfoWindow = compose(
   withGoogleMap
 )(props =>
   <GoogleMap
-    defaultZoom={8}
-    defaultCenter={{ lat: -34.397, lng: 150.644 }}
+    defaultZoom={3}
+    defaultCenter={{ lat: 40.452906, lng: 190.818206 }}
   >
     <Marker
-      position={{ lat: -34.397, lng: 150.644 }}
+      position={{ lat: 40.397, lng: 150.644 }}
       onClick={props.onToggleOpen}
     >
       {props.isOpen && <InfoWindow onCloseClick={props.onToggleOpen}>
-        <FaAnchor />
+        <text>This is the first place I visit</text>
       </InfoWindow>}
     </Marker>
   </GoogleMap>
 );
 
-
-
-
-
-
-class Map extends Component {
+class MyfancyComponent extends Component {
   render() {
     return (
-      <mapapi>
-            <title>Google Map API</title>
-            <MapWithAMakredInfoWindow
-  googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4R6AN7SmujjPUIGKdyao2Kqitzr1kiRg&v=3.exp&libraries=geometry,drawing,places"
-  loadingElement={<div style={{ height: `100%` }} />}
-  containerElement={<div style={{ height: `400px` }} />}
-  mapElement={<div style={{ height: `100%` }} />}
-/>
-      </mapapi>
+      <MyMapComponent
+      />
     );
   }
 }
 
-export default Map;
+export default MyMapComponent;

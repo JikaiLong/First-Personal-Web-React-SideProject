@@ -7,6 +7,7 @@ import Experience from './component/Experience/experience.js'
 import Experiencetree from './component/Experience/experiencetree.js'
 import Menu from './component/navmenu/navmenu.js'
 import Parti from './component/particles/particles.js'
+import Map from './component/mapstory/map.js'
 import './asset/style.css'
 
 class App extends Component {
@@ -17,10 +18,12 @@ class App extends Component {
           <Menu/>
           <Myinfo/>
           <Description/>
+          <mapinfo>
+          <Map/>
+          </mapinfo>
           <Parti/><Parti/><Parti/><Parti/>
           <Experience/>
           <Experiencetree/>
-          
       </div>
     );
   }
