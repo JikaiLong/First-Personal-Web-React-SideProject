@@ -1,12 +1,13 @@
-
+/* global google */
 import React, { Component } from 'react';
 import { compose, withProps, withStateHandlers } from "recompose";
 import FaAnchor from "react-icons/lib/fa/anchor";
 import { withScriptjs, withGoogleMap, GoogleMap, Marker, InfoWindow } from "react-google-maps"
 import Mark1 from "./Marker1.png";
 import xian from "./xian.jpg";
+import Mark2 from "./Marker2.png"
 
-var content = "maybe this time";
+
 const MyMapComponent = compose(
   withProps({
     googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places",
@@ -15,12 +16,27 @@ const MyMapComponent = compose(
     mapElement: <div style={{ height: `100%`, width: '100%'}} />,
   }),
   withStateHandlers(() => ({
-    isOpen: false,
+    isOpen1: false,
+    isOpen2: false,
   }), {
-    onToggleOpen: ({ isOpen }) => () => ({
-      isOpen: !isOpen,
+    onToggleOpen1: ({ isOpen1 }, {isOpen2}) => () => ({
+      isOpen1: true,
+      isOpen2: false
+    }),
+    onToggleOpen2: ({isOpen1}, { isOpen2 }) => () => ({
+      isOpen2: true,
+      isOpen1: false
+    }),
+    onToggleClose1: ({ isOpen1 }, {isOpen2}) => () => ({
+      isOpen1: false,
+      isOpen2: false
+    }),
+    onToggleClose2: ({isOpen1}, { isOpen2 }) => () => ({
+      isOpen2: false,
+      isOpen1: false
     })
-  }),
+  }
+),
   withScriptjs,
   withGoogleMap
 )(props =>
@@ -28,21 +44,41 @@ const MyMapComponent = compose(
     defaultZoom={3}
     defaultCenter={{ lat: 40.452906, lng: 190.818206 }}
   >
-    <Marker
+    <Marker id = "mark1"
       options={{icon: Mark1}} 
       position={{ lat: 34.4076645, lng: 108.742099 }}
-      onClick={props.onToggleOpen}
+      onClick={props.onToggleOpen1}
     >
-      {props.isOpen && <InfoWindow
-                    onCloseClick={props.onToggleOpen}
+      {props.isOpen1 && <InfoWindow id = "info1"
+                    onCloseClick={props.onToggleClose1}
                     >
-        <content1> 
-          <text id = "maptitle1">Xianyang, Shaanxi, China - Where My Journey Starts</text>
+        <content> 
+          <maptitle1> <home>Xianyang, Shaanxi, China</home> - Where My Journey Starts</maptitle1>
           <br/>
           <p><img id = "xian" src = {xian}/>
-          <mapdiscription1> This is where I start my life </mapdiscription1>
+          <mapdiscription1> I spent my first 15 years in here. Chinese education benefits my CS study a lot from its excellent Math program. 
+            <br/><br/> <keyword> Key words: Gamer, Math, Childhood </keyword> </mapdiscription1>
           </p>
-        </content1>
+        </content>
+      </InfoWindow>}
+    </Marker>
+    <Marker id = "mark2"
+      options={{icon: Mark2}} 
+      position={{ lat: 35.6958783, lng: 139.6869534 }}
+      onClick={props.onToggleOpen2}
+    >
+      {props.isOpen2 && <InfoWindow id = "info2"
+                    onCloseClick={props.onToggleClose2}
+                    >
+        <content> 
+          <maptitle2> <japan>Tokyo, Japan</japan> - The Destination of My Next Vacation Trip                                   </maptitle2>
+          <br/>
+          <p><img id = "xian" src = {xian}/>
+          <mapdiscription2> Visiting Japan always sounds attrative to me. Cheery bloom, anime and ramen, the trip is going to be amazing.
+            <br/><br/> <keyword> Key words: Travel, Culture exploration  </keyword> </mapdiscription2>
+          </p>
+        </content>
+
       </InfoWindow>}
     </Marker>
   </GoogleMap>
