@@ -15,7 +15,7 @@ import sql from './icon/sql.png';
 import svn from './icon/svn.png';
 import swift from './icon/swift.png';
 import python from './icon/python.png';
-
+import angular from './icon/angular.png'
 
 class Myinfo extends Component {
   render() {
@@ -44,30 +44,31 @@ class Myinfo extends Component {
 
             <p id = "p5">
                 <span className="l_icon">Language: 
-                    <img clasName = "l_icon_pic" src={C} alt = ""/>
-                    <img clasName = "l_icon_pic" src={CPLUS} alt = ""/>
-                    <img clasName = "l_icon_pic" src={js} alt = ""/>
-                    <img clasName = "l_icon_pic" src={java} alt = ""/>
-                    <img clasName = "l_icon_pic" src={python} alt = ""/>
-                    <img clasName = "l_icon_pic" src={swift} alt = ""/>
-                    <img clasName = "l_icon_pic" src={sql} alt = ""/>
+                    <img className = "l_icon_pic" src={C} alt = ""/>
+                    <img className = "l_icon_pic" src={CPLUS} alt = ""/>
+                    <img className = "l_icon_pic" src={js} alt = ""/>
+                    <img className = "l_icon_pic" src={java} alt = ""/>
+                    <img className = "l_icon_pic" src={python} alt = ""/>
+                    <img className = "l_icon_pic" src={swift} alt = ""/>
+                    <img className = "l_icon_pic" src={sql} alt = ""/>
                 </span>
                 <br/>
                 <span className = "l_icon">
                 Framwork: 
-                    <img clasName = "l_icon_pic" src={nodejs} alt = ""/>
-                    <img clasName = "l_icon_pic" src={react} alt = ""/>
-                    <img clasName = "l_icon_pic" src={html} alt = ""/>
-                    <img clasName = "l_icon_pic" src={css} alt = ""/>
+                    <img className = "l_icon_pic" src={angular} alt = ""/>
+                    <img className = "l_icon_pic" src={nodejs} alt = ""/>
+                    <img className = "l_icon_pic" src={react} alt = ""/>
+                    <img className = "l_icon_pic" src={html} alt = ""/>
+                    <img className = "l_icon_pic" src={css} alt = ""/>
                 </span>
                 <br/>
                 <span className = "l_icon">
                 Environment and Tools: 
-                    <img clasName = "l_icon_pic" src={git} alt = ""/>
-                    <img clasName = "l_icon_pic" src={svn} alt = ""/>
-                    <img clasName = "l_icon_pic" src={mysql} alt = ""/>
-                    <img clasName = "l_icon_pic" src={shell} alt = ""/>
-                    <img clasName = "l_icon_pic" src={ps} alt = ""/>
+                    <img className = "l_icon_pic" src={git} alt = ""/>
+                    <img className = "l_icon_pic" src={svn} alt = ""/>
+                    <img className = "l_icon_pic" src={mysql} alt = ""/>
+                    <img className = "l_icon_pic" src={shell} alt = ""/>
+                    <img className = "l_icon_pic" src={ps} alt = ""/>
                 </span>
 
                 </p>
