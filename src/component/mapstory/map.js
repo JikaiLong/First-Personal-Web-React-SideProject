@@ -74,15 +74,15 @@ const MyMapComponent = compose(
                     onCloseClick={props.onToggleClose}
                     >
         <content> 
-          <maptitle1> Xianyang, Shaanxi, China- Where My Journey Starts</maptitle1>
+          <maptitle1> Xianyang, China - Start</maptitle1>
           <br/>
-          <p>
             <div>
             <img id = "xian" src = {xian} alt = ""/>
+            <br/>
+          <mapdiscription> First 15 years in China. Middle/High Schools math programs in China benefits me a lot in algorithm due to 
+             large amount of pratices on difficult problem solving. I also start building game maps when I was in middle school.
+            <br/> <keyword> Key words: Game, Math, Childhood </keyword> </mapdiscription>
             </div>
-          <div id = "mapdiscription1"> I spent my first 15 years in here. Chinese education benefits my CS study a lot from its excellent Math program. 
-            <br/><br/> <keyword> Key words: Gamer, Math, Childhood </keyword> </div>
-          </p>
         </content>
       </InfoWindow>}
     </Marker>
