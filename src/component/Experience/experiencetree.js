@@ -7,32 +7,30 @@ import uoft from './logopic/uoft.png';
 class Experience extends Component {
   render() {
     return (
-      <tree>
-        <div class="vr">&nbsp;</div>
-            <ul1>
-                <li1 class="top">
-                <text> Innovation Enginneer at CIBC </text>
-                <div class="my_exlogo">
-                <img src={cibc}/>
+      <div id = "tree">
+        <div className="vr">&nbsp;</div>
+                <li id = "li1" className="top">
+                <span id = "text"> Innovation Enginneer at CIBC </span>
+                <div className="my_exlogo">
+                <img src={cibc} alt = ""/>
             </div>
                 
-                </li1>
-                <li1 class="middle">
-                <text> Research Intern at Higher Education Quality Council of Ontario </text>
-                <div class="my_exlogo">
-                <img src={heqco}/>
+                </li>
+                <li id = "li1" className="middle">
+                <span id = "text"> Research Intern at Higher Education Quality Council of Ontario </span>
+                <div className="my_exlogo">
+                <img src={heqco} alt = ""/>
             </div>
 
-                </li1>
-                <li1 class="bottom">
-                <text> Currently a software engineering undergrad at University of Toronto </text>
-                <div class="my_exlogo">
-                <img src={uoft}/>
+                </li>
+                <li id = "li1" className="bottom">
+                <span id = "text"> Currently a software engineering undergrad at University of Toronto </span>
+                <div className="my_exlogo">
+                <img src={uoft} alt = ""/>
             </div>
 
-                </li1>
-            </ul1>
-      </tree>
+                </li>
+      </div>
     );
   }
 }

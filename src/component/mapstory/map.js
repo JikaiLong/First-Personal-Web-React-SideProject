@@ -1,7 +1,6 @@
-/* global google */
+
 import React, { Component } from 'react';
 import { compose, withProps, withStateHandlers } from "recompose";
-import FaAnchor from "react-icons/lib/fa/anchor";
 import { withScriptjs, withGoogleMap, GoogleMap, Marker, InfoWindow } from "react-google-maps"
 import Mark1 from "./Marker1.png";
 import xian from "./xian.jpg";
@@ -90,7 +89,7 @@ const MyMapComponent = compose(
         <content> 
           <maptitle1> <home>Xianyang, Shaanxi, China</home> - Where My Journey Starts</maptitle1>
           <br/>
-          <p><img id = "xian" src = {xian}/>
+          <p><img id = "xian" src = {xian} alt = ""/>
           <mapdiscription1> I spent my first 15 years in here. Chinese education benefits my CS study a lot from its excellent Math program. 
             <br/><br/> <keyword> Key words: Gamer, Math, Childhood </keyword> </mapdiscription1>
           </p>
@@ -108,7 +107,7 @@ const MyMapComponent = compose(
         <content> 
           <maptitle2> <japan>Tokyo, Japan</japan> - The Destination of My Next Vacation Trip                                   </maptitle2>
           <br/>
-          <p><img id = "japanview" src = {japanview}/>
+          <p><img id = "japanview" src = {japanview} alt = ""/>
           <mapdiscription2> Visiting Japan always sounds attrative to me. Cheery bloom, anime and ramen, the trip is going to be amazing.
             <br/><br/> <keyword> Key words: Travel, Culture exploration  </keyword> </mapdiscription2>
           </p>
@@ -127,7 +126,7 @@ const MyMapComponent = compose(
         <content> 
           <maptitle2> <japan>Tokyo, Japan</japan> - The Destination of My Next Vacation Trip                                   </maptitle2>
           <br/>
-          <p><img id = "japanview" src = {japanview}/>
+          <p><img id = "japanview" src = {japanview} alt = ""/>
           <mapdiscription2> Visiting Japan always sounds attrative to me. Cheery bloom, anime and ramen, the trip is going to be amazing.
             <br/><br/> <keyword> Key words: Travel, Culture exploration  </keyword> </mapdiscription2>
           </p>
@@ -146,7 +145,7 @@ const MyMapComponent = compose(
         <content> 
           <maptitle2> <japan>sdasdsa</japan> sdasdsa Next Vacation Trip                                   </maptitle2>
           <br/>
-          <p><img id = "japanview" src = {japanview}/>
+          <p><img id = "japanview" src = {japanview} alt = ""/>
           <mapdiscription2> Vdsadsaunds attrative tdasdsanime and dsad trip is going to be amazing.
             <br/><br/> <keyword> Key words: Trdsadsaon  </keyword> </mapdiscription2>
           </p>
@@ -165,7 +164,7 @@ const MyMapComponent = compose(
         <content> 
           <maptitle2> <japan>Tokyo, Japan</japan> - The Destination of My Next Vacation Trip                                   </maptitle2>
           <br/>
-          <p><img id = "japanview" src = {japanview}/>
+          <p><img id = "japanview" src = {japanview} alt = ""/>
           <mapdiscription2> Visiting Japan always sounds attrative to me. Cheery bloom, anime and ramen, the trip is going to be amazing.
             <br/><br/> <keyword> Key words: Travel, Culture exploration  </keyword> </mapdiscription2>
           </p>
@@ -176,13 +175,6 @@ const MyMapComponent = compose(
   </GoogleMap>
 );
 
-class MyfancyComponent extends Component {
-  render() {
-    return (
-      <MyMapComponent
-      />
-    );
-  }
-}
+
 
 export default MyMapComponent;

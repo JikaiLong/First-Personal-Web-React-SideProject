@@ -4,9 +4,7 @@ class Experience extends Component {
   render() {
     return (
       <h3> <a id = "exp">
-            <t1>
                 Experiences
-                </t1>
                 </a>
       </h3>
     );

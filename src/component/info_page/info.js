@@ -23,51 +23,53 @@ class Myinfo extends Component {
     
     <h1> 
         <p id = "profile_image"></p>
-            <p1>
+            <p id ="p1">
                 JIKAI LONG<br/>
-            </p1>
-             <p2>
+            </p>
+             <p id = "p2">
                 Software Engineer | Student<br/>
-            </p2>
-            <p3>
+            </p>
+            <p id = "p3">
                 
             <a href="https://www.facebook.com/long.jikai" target="_blank"><i className="fa fa-facebook" /></a>
                 <a href="https://www.linkedin.com/in/jikai-long-05622b141/" target="_blank" ><i className="fa fa-linkedin" /></a>
                 <a href ="https://github.com/MarioLongJACK" target="_blank" ><i className="fa fa-github-alt"/></a><br/>
                 
-            </p3>
-            <p4>
+            </p>
+            <p id = "p4">
                 Why do JAVA developers wear glasses? 
                 Because they can not C#!<br/>
-             </p4>
+             </p>
 
-            <p5>
-                <div class="l_icon">Language: 
-                    <img src={C}/>
-                    <img src={CPLUS}/>
-                    <img src={js}/>
-                    <img src={java}/>
-                    <img src={python}/>
-                    <img src={swift}/>
-                    <img src={sql}/>
-                </div>
-                <div class = "l_icon">
+            <p id = "p5">
+                <span className="l_icon">Language: 
+                    <img src={C} alt = ""/>
+                    <img src={CPLUS} alt = ""/>
+                    <img src={js} alt = ""/>
+                    <img src={java} alt = ""/>
+                    <img src={python} alt = ""/>
+                    <img src={swift} alt = ""/>
+                    <img src={sql} alt = ""/>
+                </span>
+                <br/>
+                <span className = "l_icon">
                 Framwork: 
-                    <img src={nodejs}/>
-                    <img src={react}/>
-                    <img src={html}/>
-                    <img src={css}/>
-                </div>
-                <div class = "l_icon">
+                    <img src={nodejs} alt = ""/>
+                    <img src={react} alt = ""/>
+                    <img src={html} alt = ""/>
+                    <img src={css} alt = ""/>
+                </span>
+                <br/>
+                <span className = "l_icon">
                 Environment and Tools: 
-                    <img src={git}/>
-                    <img src={svn}/>
-                    <img src={mysql}/>
-                    <img src={shell}/>
-                    <img src={ps}/>
-                </div>
+                    <img src={git} alt = ""/>
+                    <img src={svn} alt = ""/>
+                    <img src={mysql} alt = ""/>
+                    <img src={shell} alt = ""/>
+                    <img src={ps} alt = ""/>
+                </span>
 
-                </p5>
+                </p>
         
     </h1>
     );

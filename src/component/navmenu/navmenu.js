@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import man from "./icon/man.png";
 import $ from "jquery";
-var scrollToElement = require('scroll-to-element');
+
 
 
 $(document).ready(function(){
@@ -29,20 +29,20 @@ class Menu extends Component {
     
   render() {
     return (
-      <man>
-            <div id = "manul" class = "manul" >
-            <img src = {man} href = "#"/>
+      <div id = "man">
+            <div id = "manul" className = "manul" >
+            <img src = {man} href = "#" alt = ""/>
            </div >
 
            <div>
             <ul id = "link">
-                <li><a id = "linkaboutme" class = "slide-section" href = "#aboutme">About Me</a> 
+                <li><a id = "linkaboutme" className = "slide-section" href = "#aboutme">About Me</a> 
                 </li>
-                <li><a id = "linkexp"  class = "slide-section" href = "#exp">Experience</a> </li>
+                <li><a id = "linkexp"  className = "slide-section" href = "#exp">Experience</a> </li>
             </ul>
             </div>
 
-      </man>
+      </div>
     );
   }
 

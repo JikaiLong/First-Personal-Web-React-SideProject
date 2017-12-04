@@ -25,7 +25,7 @@ body {
     margin: auto
 } 
 
-p1 {
+#p1 {
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-size: 35pt;
     font-weight: bold;
@@ -39,7 +39,7 @@ p1 {
     color: black
 }
 
-p2 {
+#p2 {
     font-family: "Impact";
     font-size: 25pt;
     top: 360px;
@@ -52,7 +52,7 @@ p2 {
     color: black
 }
 
-p3 {
+#p3 {
     top: 420px;
     left:0px;
     right:0px;
@@ -63,7 +63,7 @@ p3 {
 
 }
 
-p4 {
+#p4 {
     font-family: "Impact";
     font-size: 13pt;
     top: 510px;
@@ -76,7 +76,7 @@ p4 {
     color: black
 }
 
-p5 {
+#p5 {
     font-family: "Sans";
     font-size: 15pt;
     top: 560px;
@@ -114,7 +114,7 @@ h3 {
     padding-right: 150px;
 }
 
-t1{
+#t1{
     font-family: "Sans";
     font-size: 30px;
     border-style:solid;
@@ -124,14 +124,14 @@ t1{
     text-align: center;
 }
 
-am1{
+#am1{
     font-family: "Sans";
     font-size: 20px;
     line-height: 175%;
     margin:auto;
 }
 
-tree {
+#tree {
     top: 2100px;
     left:25px;
     right:0;
@@ -207,15 +207,16 @@ tree {
     border-radius: 15%;
 }
 
-li1 {
+#li1 {
     margin:10px;
     color:Black;
     font-style:Comic;
     font-weight:bold;
     overflow:hidden;
     font-size: 20px;
+    list-style-type: none;
 }
-li1::before {
+#li1::before {
     height:20px;
     width:20px;
     content:"";
@@ -227,13 +228,13 @@ li1::before {
     margin-right:0px;
     margin-top: 60px;
 }
-li1.top {
+#li1.top {
     margin-left:0px;
 }
-li1.middle {
+#li1.middle {
     margin-left:0px;
 }
-li1.bottom {
+#li1.bottom {
     margin-left:0px;
 }
 
@@ -246,7 +247,7 @@ ul li {
 }
 
 
-man
+#man
 {
     list-style: none;
     color: white;
@@ -287,7 +288,7 @@ man
     color: yellow;
 }
 
-mapinfo{
+#mapinfo{
     position: absolute;
     margin: auto;
     top: 1550px;
