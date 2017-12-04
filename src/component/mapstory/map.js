@@ -8,7 +8,7 @@ import Mark2 from "./Marker2.png";
 import japanview from "./japanview.jpg";
 import Mark3 from "./Marker3.png";
 import Mark4 from "./Marker4.png";
-import Mark5 from "./Marker5.png";
+
 
 
 
@@ -23,50 +23,37 @@ const MyMapComponent = compose(
     isOpen1: false,
     isOpen2: false,
     isOpen3: false,
-    isOpen4: false,
-    isOpen5: false,
+    isOpen4: false
   }), {
     onToggleOpen1: () => () => ({
       isOpen1: true,
       isOpen2: false,
       isOpen3: false,
-      isOpen4: false,
-      isOpen5: false
+      isOpen4: false
     }),
     onToggleOpen2: () => () => ({
       isOpen1: false,
       isOpen2: true,
       isOpen3: false,
-      isOpen4: false,
-      isOpen5: false
+      isOpen4: false
     }),
     onToggleOpen3: () => () => ({
       isOpen1: false,
       isOpen2: false,
       isOpen3: true,
-      isOpen4: false,
-      isOpen5: false
+      isOpen4: false
     }),
     onToggleOpen4: () => () => ({
       isOpen1: false,
       isOpen2: false,
       isOpen3: false,
-      isOpen4: true,
-      isOpen5: false
+      isOpen4: true
     }),
     onToggleOpen5: () => () => ({
       isOpen1: false,
       isOpen2: false,
       isOpen3: false,
-      isOpen4: false,
-      isOpen5: true
-    }),
-    onToggleClose: () => () => ({
-      isOpen1: false,
-      isOpen2: false,
-      isOpen3: false,
-      isOpen4: false,
-      isOpen5: false
+      isOpen4: false
     }),
 
   }
@@ -75,23 +62,26 @@ const MyMapComponent = compose(
   withGoogleMap
 )(props =>
   <GoogleMap
-    defaultZoom={3}
-    defaultCenter={{ lat: 40.452906, lng: 190.818206 }}
+    defaultZoom={2}
+    defaultCenter={{ lat: 50.452906, lng: 120.818206 }}
   > 
     <Marker id = "mark1"
       options={{icon: Mark1}} 
       position={{ lat: 34.4076645, lng: 108.742099 }}
       onClick={props.onToggleOpen1}
     >
-      {props.isOpen1 && <InfoWindow id = "info1"
+      {props.isOpen1 && <InfoWindow id = "info1" className = "infowindow"
                     onCloseClick={props.onToggleClose}
                     >
         <content> 
-          <maptitle1> <home>Xianyang, Shaanxi, China</home> - Where My Journey Starts</maptitle1>
+          <maptitle1> Xianyang, Shaanxi, China- Where My Journey Starts</maptitle1>
           <br/>
-          <p><img id = "xian" src = {xian} alt = ""/>
-          <mapdiscription1> I spent my first 15 years in here. Chinese education benefits my CS study a lot from its excellent Math program. 
-            <br/><br/> <keyword> Key words: Gamer, Math, Childhood </keyword> </mapdiscription1>
+          <p>
+            <div>
+            <img id = "xian" src = {xian} alt = ""/>
+            </div>
+          <div id = "mapdiscription1"> I spent my first 15 years in here. Chinese education benefits my CS study a lot from its excellent Math program. 
+            <br/><br/> <keyword> Key words: Gamer, Math, Childhood </keyword> </div>
           </p>
         </content>
       </InfoWindow>}
@@ -101,11 +91,11 @@ const MyMapComponent = compose(
       position={{ lat: 35.6958783, lng: 139.6869534 }}
       onClick={props.onToggleOpen2}
     >
-      {props.isOpen2 && <InfoWindow id = "info2"
+      {props.isOpen2 && <InfoWindow id = "info2" className = "infowindow"
                     onCloseClick={props.onToggleClose}
                     >
         <content> 
-          <maptitle2> <japan>Tokyo, Japan</japan> - The Destination of My Next Vacation Trip                                   </maptitle2>
+          <maptitle2> Tokyo, Japan - The Destination of My Next Vacation Trip                                   </maptitle2>
           <br/>
           <p><img id = "japanview" src = {japanview} alt = ""/>
           <mapdiscription2> Visiting Japan always sounds attrative to me. Cheery bloom, anime and ramen, the trip is going to be amazing.
@@ -120,11 +110,11 @@ const MyMapComponent = compose(
       position={{ lat: 43.6565353, lng: -79.6010328 }}
       onClick={props.onToggleOpen3}
     >
-      {props.isOpen3 && <InfoWindow id = "info3"
+      {props.isOpen3 && <InfoWindow id = "info3" className = "infowindow"
                     onCloseClick={props.onToggleClose}
                     >
         <content> 
-          <maptitle2> <japan>Tokyo, Japan</japan> - The Destination of My Next Vacation Trip                                   </maptitle2>
+          <maptitle2> Tokyo, Japan - The Destination of My Next Vacation Trip                                   </maptitle2>
           <br/>
           <p><img id = "japanview" src = {japanview} alt = ""/>
           <mapdiscription2> Visiting Japan always sounds attrative to me. Cheery bloom, anime and ramen, the trip is going to be amazing.
@@ -136,37 +126,18 @@ const MyMapComponent = compose(
     </Marker>
     <Marker id = "mark4"
       options={{icon: Mark4}} 
-      position={{ lat: 44.3151729, lng: -70.5957858 }}
+      position={{ lat: 37.402473, lng: -122.3212856 }}
       onClick={props.onToggleOpen4}
     >
-      {props.isOpen4 && <InfoWindow id = "info4"
+      {props.isOpen4 && <InfoWindow id = "info4" className = "infowindow"
                     onCloseClick={props.onToggleClose}
                     >
         <content> 
-          <maptitle2> <japan>sdasdsa</japan> sdasdsa Next Vacation Trip                                   </maptitle2>
+          <maptitle2> sdasdsasdasdsa Next Vacation Trip                                   </maptitle2>
           <br/>
           <p><img id = "japanview" src = {japanview} alt = ""/>
           <mapdiscription2> Vdsadsaunds attrative tdasdsanime and dsad trip is going to be amazing.
             <br/><br/> <keyword> Key words: Trdsadsaon  </keyword> </mapdiscription2>
-          </p>
-        </content>
-
-      </InfoWindow>}
-    </Marker>
-    <Marker id = "mark5"
-      options={{icon: Mark5}} 
-      position={{ lat: 37.4024713, lng: -122.3219772 }}
-      onClick={props.onToggleOpen5}
-    >
-      {props.isOpen5 && <InfoWindow id = "info5"
-                    onCloseClick={props.onToggleClose}
-                    >
-        <content> 
-          <maptitle2> <japan>Tokyo, Japan</japan> - The Destination of My Next Vacation Trip                                   </maptitle2>
-          <br/>
-          <p><img id = "japanview" src = {japanview} alt = ""/>
-          <mapdiscription2> Visiting Japan always sounds attrative to me. Cheery bloom, anime and ramen, the trip is going to be amazing.
-            <br/><br/> <keyword> Key words: Travel, Culture exploration  </keyword> </mapdiscription2>
           </p>
         </content>
 

@@ -8,15 +8,15 @@ class Description extends Component {
   render() {
     return (
       <h2><a id="aboutme">
-            <span id = "t1">
+            <a id = "t1">
                 About me
-                </span>
+                </a>
             <div id = "am1">
                 <br/><br/>
-                I am Jikai (you can refer me as Jack), currently a thrid year Software Engineering student at University of Toronto.
-                I did internship at Higher Education Quality of Ontario as a Quantitative Research Intern and at CIBC as an Innovation
-                Engineer. Like most computer science students, I like playing games, World of Warcraft is my favourite. I am also a guitarist
-                and a bodybuilder. <br/> 
+                I am Jikai (you can refer me as Jack), currently a thrid year Software Engineering Specialist student at University of Toronto. 
+                Like most computer science "hackers", I enjoy vedio games such as World of Warcraft. Aside from CS,
+                Guitar and Bodybuilding are also my favourites exercises to reduce stress from hours of brainstorming.
+                <br/> 
                 
                 <div className="my_logo">
                 <img src={guitar} alt = ""/>
@@ -24,10 +24,15 @@ class Description extends Component {
                 <img src={wow} alt = ""/>
                 <br/>
             </div>
-            I like computer science because it makes me more creative. There will always be more to learn and explore. Building things
-                while studying new technology is so entertainning as everything is connected more or less. I should not only train my body,
-                brain workout is important as well. 
-                    </div>
+                My Thought on CS: As Computer Science applies everywhere in our daily life, I'd always like to work with cutting-edge technologies
+                to make great impact on our modern life style. So I chose the "dark path" to make changes.
+                    
+                <div id = "mapdescription">
+                  <br/>
+                The following map shows My journey
+                <br/>
+                </div>
+                </div>
             </a>
       </h2>
     );

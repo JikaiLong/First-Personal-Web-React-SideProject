@@ -33,14 +33,11 @@ class Menu extends Component {
             <div id = "manul" className = "manul" >
             <img src = {man} href = "#" alt = ""/>
            </div >
-
-           <div>
-            <ul id = "link">
-                <li><a id = "linkaboutme" className = "slide-section" href = "#aboutme">About Me</a> 
+            <span id ="link">
+                <li id = "linkaboutme"><a id = "linkaboutme" className = "slide-section" href = "#aboutme">About Me</a> 
                 </li>
-                <li><a id = "linkexp"  className = "slide-section" href = "#exp">Experience</a> </li>
-            </ul>
-            </div>
+                <li id = "linkaboutme"><a id = "linkexp"  className = "slide-section" href = "#exp">Experience</a> </li>
+          </span>
 
       </div>
     );

@@ -23,6 +23,7 @@ class Myinfo extends Component {
     
     <h1> 
         <p id = "profile_image"></p>
+            <br/>
             <p id ="p1">
                 JIKAI LONG<br/>
             </p>
@@ -43,30 +44,30 @@ class Myinfo extends Component {
 
             <p id = "p5">
                 <span className="l_icon">Language: 
-                    <img src={C} alt = ""/>
-                    <img src={CPLUS} alt = ""/>
-                    <img src={js} alt = ""/>
-                    <img src={java} alt = ""/>
-                    <img src={python} alt = ""/>
-                    <img src={swift} alt = ""/>
-                    <img src={sql} alt = ""/>
+                    <img clasName = "l_icon_pic" src={C} alt = ""/>
+                    <img clasName = "l_icon_pic" src={CPLUS} alt = ""/>
+                    <img clasName = "l_icon_pic" src={js} alt = ""/>
+                    <img clasName = "l_icon_pic" src={java} alt = ""/>
+                    <img clasName = "l_icon_pic" src={python} alt = ""/>
+                    <img clasName = "l_icon_pic" src={swift} alt = ""/>
+                    <img clasName = "l_icon_pic" src={sql} alt = ""/>
                 </span>
                 <br/>
                 <span className = "l_icon">
                 Framwork: 
-                    <img src={nodejs} alt = ""/>
-                    <img src={react} alt = ""/>
-                    <img src={html} alt = ""/>
-                    <img src={css} alt = ""/>
+                    <img clasName = "l_icon_pic" src={nodejs} alt = ""/>
+                    <img clasName = "l_icon_pic" src={react} alt = ""/>
+                    <img clasName = "l_icon_pic" src={html} alt = ""/>
+                    <img clasName = "l_icon_pic" src={css} alt = ""/>
                 </span>
                 <br/>
                 <span className = "l_icon">
                 Environment and Tools: 
-                    <img src={git} alt = ""/>
-                    <img src={svn} alt = ""/>
-                    <img src={mysql} alt = ""/>
-                    <img src={shell} alt = ""/>
-                    <img src={ps} alt = ""/>
+                    <img clasName = "l_icon_pic" src={git} alt = ""/>
+                    <img clasName = "l_icon_pic" src={svn} alt = ""/>
+                    <img clasName = "l_icon_pic" src={mysql} alt = ""/>
+                    <img clasName = "l_icon_pic" src={shell} alt = ""/>
+                    <img clasName = "l_icon_pic" src={ps} alt = ""/>
                 </span>
 
                 </p>
