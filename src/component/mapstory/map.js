@@ -1,18 +1,19 @@
 
 import React, { Component } from 'react';
 import { compose, withProps, withStateHandlers } from "recompose";
-import { withScriptjs, withGoogleMap, GoogleMap, Marker, InfoWindow } from "react-google-maps"
+import { withScriptjs, withGoogleMap, GoogleMap, Marker, InfoWindow , GoogleApiWrapper } from "react-google-maps"
 import Mark1 from "./Marker1.png";
 import xian from "./xian.jpg";
 import Mark2 from "./Marker2.png";
 import japanview from "./japanview.jpg";
+import sushi from "./sushi.jpg";
 import Mark3 from "./Marker3.png";
 import Mark4 from "./Marker4.png";
 
 
 
 
-const MyMapComponent = compose(
+export const MyMapComponent = compose(
   withProps({
     googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%`, width: '100%' }}/>,
@@ -49,13 +50,12 @@ const MyMapComponent = compose(
       isOpen3: false,
       isOpen4: true
     }),
-    onToggleOpen5: () => () => ({
+    onToggleClose:() => () => ({
       isOpen1: false,
       isOpen2: false,
       isOpen3: false,
       isOpen4: false
-    }),
-
+    })
   }
 ),
   withScriptjs,
@@ -74,7 +74,7 @@ const MyMapComponent = compose(
                     onCloseClick={props.onToggleClose}
                     >
         <content> 
-          <maptitle1> Xianyang, China - Start</maptitle1>
+          <maptitle> Xianyang, China - Start</maptitle>
           <br/>
             <div>
             <img id = "xian" src = {xian} alt = ""/>
@@ -95,11 +95,14 @@ const MyMapComponent = compose(
                     onCloseClick={props.onToggleClose}
                     >
         <content> 
-          <maptitle2> Tokyo, Japan - The Destination of My Next Vacation Trip                                   </maptitle2>
+          <maptitle> Tokyo, Japan</maptitle>
           <br/>
           <p><img id = "japanview" src = {japanview} alt = ""/>
-          <mapdiscription2> Visiting Japan always sounds attrative to me. Cheery bloom, anime and ramen, the trip is going to be amazing.
-            <br/><br/> <keyword> Key words: Travel, Culture exploration  </keyword> </mapdiscription2>
+          <img id = "japanview" src = {sushi} alt = ""/>
+          <br/>
+          <mapdiscription> Japan is next travel destination. Japnese cultures are so unique that I must experinece it myself. Also, I always want to 
+            try the traditional ramen and sushi as they are my favorites. 
+            <br/><br/> <keyword> Key words: Travel, Culture </keyword> </mapdiscription>
           </p>
         </content>
 
@@ -114,11 +117,11 @@ const MyMapComponent = compose(
                     onCloseClick={props.onToggleClose}
                     >
         <content> 
-          <maptitle2> Tokyo, Japan - The Destination of My Next Vacation Trip                                   </maptitle2>
+          <maptitle> Tokyo, Japan - The Destination of My Next Vacation Trip                                   </maptitle>
           <br/>
           <p><img id = "japanview" src = {japanview} alt = ""/>
-          <mapdiscription2> Visiting Japan always sounds attrative to me. Cheery bloom, anime and ramen, the trip is going to be amazing.
-            <br/><br/> <keyword> Key words: Travel, Culture exploration  </keyword> </mapdiscription2>
+          <mapdiscription> Visiting Japan always sounds attrative to me. Cheery bloom, anime and ramen, the trip is going to be amazing.
+            <br/><br/> <keyword> Key words: Travel, Culture exploration  </keyword> </mapdiscription>
           </p>
         </content>
 
@@ -133,11 +136,11 @@ const MyMapComponent = compose(
                     onCloseClick={props.onToggleClose}
                     >
         <content> 
-          <maptitle2> sdasdsasdasdsa Next Vacation Trip                                   </maptitle2>
+          <maptitle> sdasdsasdasdsa Next Vacation Trip                                   </maptitle>
           <br/>
           <p><img id = "japanview" src = {japanview} alt = ""/>
-          <mapdiscription2> Vdsadsaunds attrative tdasdsanime and dsad trip is going to be amazing.
-            <br/><br/> <keyword> Key words: Trdsadsaon  </keyword> </mapdiscription2>
+          <mapdiscription> Vdsadsaunds attrative tdasdsanime and dsad trip is going to be amazing.
+            <br/><br/> <keyword> Key words: Trdsadsaon  </keyword> </mapdiscription>
           </p>
         </content>
 
@@ -149,3 +152,4 @@ const MyMapComponent = compose(
 
 
 export default MyMapComponent;
+
