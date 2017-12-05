@@ -32,9 +32,9 @@ class Myinfo extends Component {
             </p>
             <p id = "p3">
                 
-            <a href="https://www.facebook.com/long.jikai" target="_blank"><i className="fa fa-facebook" /></a>
-                <a href="https://www.linkedin.com/in/jikai-long-05622b141/" target="_blank" ><i className="fa fa-linkedin" /></a>
-                <a href ="https://github.com/MarioLongJACK" target="_blank" ><i className="fa fa-github-alt"/></a><br/>
+            <a href="https://www.facebook.com/long.jikai" target="_blank" rel="noopener noreferrer"><i className="fa fa-facebook" /></a>
+                <a href="https://www.linkedin.com/in/jikai-long-05622b141/" target="_blank" rel="noopener noreferrer" ><i className="fa fa-linkedin" /></a>
+                <a href ="https://github.com/MarioLongJACK" target="_blank" rel="noopener noreferrer" ><i className="fa fa-github-alt"/></a><br/>
                 
             </p>
             <p id = "p4">

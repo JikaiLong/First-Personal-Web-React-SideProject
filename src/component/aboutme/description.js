@@ -7,7 +7,7 @@ import guitar from './logo/guitar.jpg';
 class Description extends Component {
   render() {
     return (
-      <h2><a id="aboutme">
+      <h2><div id="aboutme">
             <a id = "t1">
                 About me
                 </a>
@@ -33,7 +33,7 @@ class Description extends Component {
                 <br/>
                 </div>
                 </div>
-            </a>
+            </div>
       </h2>
     );
   }

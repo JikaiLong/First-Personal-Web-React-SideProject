@@ -332,7 +332,7 @@ ul li {
     left: 2.5vw;
 }
 
-maptitle {
+.maptitle {
     font-family: "Comic Sans MS", cursive, sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -368,7 +368,7 @@ content {
     right:30px;
 }
 
-mapdiscription{
+.mapdiscription{
     font-family: "Sans";
     font-size: 15pt;
     line-height: 150%;
@@ -379,7 +379,7 @@ mapdiscription{
 
 
 
-keyword {
+.keyword {
     font-family: "oblique";
     font-size: 15px;
     line-height:200%;
