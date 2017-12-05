@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import bodybuild from './logo/bodybuild.png';
 import wow from './logo/wow.png';
 import guitar from './logo/guitar.jpg';
-
+import Map from '../../component/mapstory/map.js'
+import Experience from '../../component/Experience/experience.js'
+import Experiencetree from '../../component/Experience/experiencetree.js'
 
 class Description extends Component {
   render() {
@@ -31,10 +33,24 @@ class Description extends Component {
                   <br/>
                 The following map shows My journey
                 <br/>
+                <div className = "getspace">
+                  </div>
+                <div id = "mapinfo">
+                  <Map/>
                 </div>
                 </div>
-            </div>
-      </h2>
+                <br/>
+                </div>
+                </div>
+                <br/>
+                <div className = "getspace">
+                  </div>
+                <div id = "myexperience">
+                  <Experience/>
+                  <br/>
+                  <Experiencetree/>
+             </div>
+             </h2>
     );
   }
 }

@@ -8,17 +8,21 @@ import Mark2 from "./Marker2.png";
 import japanview from "./japanview.jpg";
 import sushi from "./sushi.jpg";
 import Mark3 from "./Marker3.png";
+import toronto from "./toronto.jpg"
+import uoft from "./uoft.jpg"
 import Mark4 from "./Marker4.png";
 
+const MY_API_KEY = "AIzaSyDklpGW27746BIhpuqbcpGm_kOVw9BfHJg"
 
 
 
 export const MyMapComponent = compose(
   withProps({
-    googleMapURL: "https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=geometry,drawing,places",
+    googleMapURL: "https://maps.googleapis.com/maps/api/js??key=" + MY_API_KEY + "&libraries=geometry,drawing,places",
     loadingElement: <div style={{ height: `100%`, width: '100%' }}/>,
     containerElement: <div style={{ height: `400px`, width: '100%'}} />,
     mapElement: <div style={{ height: `100%`, width: '100%'}} />,
+    key:MY_API_KEY
   }),
   withStateHandlers(() => ({
     isOpen1: false,
@@ -64,7 +68,7 @@ export const MyMapComponent = compose(
   <GoogleMap
     defaultZoom={2}
     defaultCenter={{ lat: 50.452906, lng: 120.818206 }}
-    key = {"AIzaSyDnFJlSJbQYF6BN9lQTdB6BX__IsRoXSA0"}
+    key = {MY_API_KEY}
   > 
     <Marker id = "mark1"
       options={{icon: Mark1}} 
@@ -76,13 +80,12 @@ export const MyMapComponent = compose(
                     >
         <content> 
           <p className = "maptitle"> Xianyang, China - Start</p>
-          <br/>
             <div>
             <img id = "xian" src = {xian} alt = ""/>
             <br/>
           <p className = "mapdiscription"> First 15 years in China. Middle/High Schools math programs in China benefits me a lot in algorithm due to 
              large amount of pratices on difficult problem solving. I also start building game maps when I was in middle school.
-            <br/> <p className = "keyword"> Key words: Game, Math, Childhood </p> </p>
+            <br/> <a className = "keyword"> Key words: Game, Math, Childhood </a> </p>
             </div>
         </content>
       </InfoWindow>}
@@ -97,13 +100,12 @@ export const MyMapComponent = compose(
                     >
         <content> 
           <p className = "maptitle"> Tokyo, Japan</p>
-          <br/>
           <p><img id = "japanview" src = {japanview} alt = ""/>
           <img id = "japanview" src = {sushi} alt = ""/>
           <br/>
           <p className = "mapdiscription"> Japan is next travel destination. Japnese cultures are so unique that I must experinece it myself. Also, I always want to 
             try the traditional ramen and sushi as they are my favorites. 
-            <br/><br/> <p classNmae = "keyword"> Key words: Travel, Culture </p> </p>
+            <br/><br/> <a className = "keyword"> Key words: Travel, Culture </a> </p>
           </p>
         </content>
 
@@ -118,12 +120,13 @@ export const MyMapComponent = compose(
                     onCloseClick={props.onToggleClose}
                     >
         <content> 
-          <p className = "maptitle"> Tokyo, Japan - The Destination of My Next Vacation Trip                                   </p>
+          <p className = "maptitle"> Toronto, Canada                                </p>
+          <div><img id = "torontoview" src = {toronto} alt = ""/>
+          <img id = "torontoview" src = {uoft} alt = ""/>
           <br/>
-          <p><img id = "japanview" src = {japanview} alt = ""/>
-          <p className = "mapdiscription"> Visiting Japan always sounds attrative to me. Cheery bloom, anime and ramen, the trip is going to be amazing.
-            <br/><br/> <p className = "keyword"> Key words: Travel, Culture exploration  </p> </p>
-          </p>
+          <p className = "mapdiscription"> 
+            <br/><br/> <a className = "keyword"> Key words: Travel, Culture exploration  </a> </p>
+          </div>
         </content>
 
       </InfoWindow>}
@@ -139,10 +142,10 @@ export const MyMapComponent = compose(
         <content> 
           <p className = "maptitle"> sdasdsasdasdsa Next Vacation Trip                                   </p>
           <br/>
-          <p><img id = "japanview" src = {japanview} alt = ""/>
+          <div><img id = "japanview" src = {japanview} alt = ""/>
           <p className = "mapdiscription"> Vdsadsaunds attrative tdasdsanime and dsad trip is going to be amazing.
-            <br/><br/> <p className = "keyword"> Key words: Trdsadsaon  </p> </p>
-          </p>
+            <br/><br/> <a className = "keyword"> Key words: Trdsadsaon  </a> </p>
+          </div>
         </content>
 
       </InfoWindow>}
