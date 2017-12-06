@@ -42,7 +42,7 @@ class Experience extends Component {
 
                 </li>
                 <li id = "li1" className="bottom">
-                <span id = "text"> Software Engineering Undergraduate at University of Toronto - 2017 to Now </span>
+                <span id = "text"> Software Engineering Undergraduate at University of Toronto - 2015 to Present </span>
                 <div className="my_exlogo">
                 <img src={uoft} alt = ""/>
                 <br/>
