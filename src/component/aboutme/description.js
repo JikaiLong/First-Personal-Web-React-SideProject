@@ -16,7 +16,7 @@ class Description extends Component {
             <div id = "am1">
                 <br/><br/>
                 I am Jikai (you can refer me as Jack), currently a thrid year Software Engineering Specialist student at University of Toronto. 
-                Like most computer science "hackers", I enjoy vedio games such as World of Warcraft. Aside from CS,
+                Like most computer science "hackers", I enjoy vedio games such as World of Warcraft. Aside from CS, 
                 Guitar and Bodybuilding are also my favourites exercises to reduce stress from hours of brainstorming.
                 <br/> 
                 
@@ -33,8 +33,6 @@ class Description extends Component {
                   <br/>
                 The following map shows My journey
                 <br/>
-                <div className = "getspace">
-                  </div>
                 <div id = "mapinfo">
                   <Map/>
                 </div>
@@ -43,8 +41,6 @@ class Description extends Component {
                 </div>
                 </div>
                 <br/>
-                <div className = "getspace">
-                  </div>
                 <div id = "myexperience">
                   <Experience/>
                   <br/>

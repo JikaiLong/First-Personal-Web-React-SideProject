@@ -9,8 +9,9 @@ import japanview from "./japanview.jpg";
 import sushi from "./sushi.jpg";
 import Mark3 from "./Marker3.png";
 import toronto from "./toronto.jpg"
-import uoft from "./uoft.jpg"
+import thack2 from "./thacks2.png"
 import Mark4 from "./Marker4.png";
+import silicon from "./silicon.png";
 
 const MY_API_KEY = "AIzaSyDklpGW27746BIhpuqbcpGm_kOVw9BfHJg"
 
@@ -101,9 +102,9 @@ export const MyMapComponent = compose(
         <content> 
           <p className = "maptitle"> Tokyo, Japan</p>
           <p><img id = "japanview" src = {japanview} alt = ""/>
-          <img id = "japanview" src = {sushi} alt = ""/>
           <br/>
-          <p className = "mapdiscription"> Japan is next travel destination. Japnese cultures are so unique that I must experinece it myself. Also, I always want to 
+          <p className = "mapdiscription"> Japan is next travel destination. Japnese cultures are so unique that I must experinece it myself. <br/>
+          <img id = "japanview" src = {sushi} alt = ""/><br/>Also, I always want to 
             try the traditional ramen and sushi as they are my favorites. 
             <br/><br/> <a className = "keyword"> Key words: Travel, Culture </a> </p>
           </p>
@@ -122,10 +123,14 @@ export const MyMapComponent = compose(
         <content> 
           <p className = "maptitle"> Toronto, Canada                                </p>
           <div><img id = "torontoview" src = {toronto} alt = ""/>
-          <img id = "torontoview" src = {uoft} alt = ""/>
           <br/>
           <p className = "mapdiscription"> 
-            <br/><br/> <a className = "keyword"> Key words: Travel, Culture exploration  </a> </p>
+            After graduating from high school in Peterborough, I went to University of Toronto for my post-secondary education.<br/>
+            <img id = "torontoview" src = {thack2} alt = ""/><br/>
+            Other than taking mandatory classes, I participate many hackathons such as Thacks and Microsoft Hackathon(MSFT) for 
+            additional recouses and learning opportunities. I used to work as a intern at HEQCO and currently a innovation engineer
+            at CIBC Lab. Love this place. 
+            <br/><br/> <a className = "keyword"> Key words: Post-secondary, Hackathon, Internship  </a> </p>
           </div>
         </content>
 
@@ -140,11 +145,12 @@ export const MyMapComponent = compose(
                     onCloseClick={props.onToggleClose}
                     >
         <content> 
-          <p className = "maptitle"> sdasdsasdasdsa Next Vacation Trip                                   </p>
+          <p className = "maptitle"> CA, USA                                 </p>
           <br/>
-          <div><img id = "japanview" src = {japanview} alt = ""/>
-          <p className = "mapdiscription"> Vdsadsaunds attrative tdasdsanime and dsad trip is going to be amazing.
-            <br/><br/> <a className = "keyword"> Key words: Trdsadsaon  </a> </p>
+          <div><img id = "laview" src = {silicon} alt = ""/>
+          <p className = "mapdiscription"> My plan after graduation will be either studying for a master degree or landing myself a job in 
+            high tech companies. For both cases, LA, the tech center will be my ultimate long-term study or work destination. 
+            <br/><br/> <a className = "keyword"> Key words: Goals, Long-term, Plan  </a> </p>
           </div>
         </content>
 

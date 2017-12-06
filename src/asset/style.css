@@ -127,7 +127,7 @@ h3 {
 
 #t1{
     font-family: "Sans";
-    font-size: 25px;
+    font-size: 18px;
     border-style:solid;
     border-width: 5px;
     border-color: green;
@@ -139,7 +139,7 @@ h3 {
 
 #am1{
     font-family: "Sans";
-    font-size: 20px;
+    font-size: 18px;
     line-height: 175%;
 }
 
@@ -290,6 +290,7 @@ ul li {
     font-size: 17px;
     top:6px;
     text-align: left;
+    padding-left:1vw;
 }
 .manul{
     padding-top: 20px;
@@ -351,8 +352,10 @@ ul li {
 
 
 #xian {
-    height:170px;
-    width: 300px;
+    max-height:190px;
+    max-width: 500px;
+    height:25vw;
+    width:50vw;
     right: 0px;
     left: 0px;
     margin: auto;
@@ -361,8 +364,10 @@ ul li {
 }
 
 #japanview{
-    height:130px;
-    width: 250px;
+    max-height:180px;
+    max-width: 450px;
+    height:25vw;
+    width:50vw;
     right: 0px;
     left: 0px;
     margin: auto;
@@ -371,13 +376,27 @@ ul li {
 }
 
 #torontoview{
-    height:150px;
-    width: 290px;
+    max-height:180px;
+    max-width: 450px;
+    height:35vw;
+    width:50vw;
     right: 0px;
     left: 0px;
     margin: auto;
     border-radius: 10%;
     margin: 10px;
+}
+
+#laview{
+    max-height:190px;
+    max-width: 500px;
+    height:25vw;
+    width:50vw;
+    right: 0px;
+    left: 0px;
+    margin: auto;
+    border-radius: 10%;
+    padding-top:10px;
 }
 content {
     left:10px;
@@ -386,7 +405,7 @@ content {
 
 .mapdiscription{
     font-family: "Sans";
-    font-size: 15pt;
+    font-size: 13pt;
     line-height: 150%;
     margin:auto;
     text-align: left;
