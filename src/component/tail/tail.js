@@ -12,7 +12,7 @@ class Tail extends Component {
             <a href = "https://www.instagram.com/jacklong36/" target="_blank" rel="noopener noreferrer">
             <img className = "contact"src = {ins} alt = '' />
             </a>
-            follow my instagram 
+            follow me on Instagram 
             </div>
             </h6>
     );
