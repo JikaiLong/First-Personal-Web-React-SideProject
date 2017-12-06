@@ -31,7 +31,7 @@ h1{
 }
 
 #p1 {
-    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-family: "Comic Sans MS", sans-serif;
     font-weight: bold;
     top: 290px;
     left:0;
@@ -45,7 +45,7 @@ h1{
 
 #p2 {
     font-family: "Impact";
-    font-size: 20pt;
+    font-size: 18pt;
     top: 340px;
     left:0;
     right:0;
