@@ -6,6 +6,7 @@ import Map from '../../component/mapstory/map.js'
 import Experience from '../../component/Experience/experience.js'
 import Experiencetree from '../../component/Experience/experiencetree.js'
 
+
 class Description extends Component {
   render() {
     return (
@@ -45,7 +46,9 @@ class Description extends Component {
                   <Experience/>
                   <br/>
                   <Experiencetree/>
+                  <br/>
              </div>
+
              </h2>
     );
   }

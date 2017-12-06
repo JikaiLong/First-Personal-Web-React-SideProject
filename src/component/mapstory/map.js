@@ -101,13 +101,13 @@ export const MyMapComponent = compose(
                     >
         <content> 
           <p className = "maptitle"> Tokyo, Japan</p>
-          <p><img id = "japanview" src = {japanview} alt = ""/>
+          <div><img id = "japanview" src = {japanview} alt = ""/>
           <br/>
-          <p className = "mapdiscription"> Japan is next travel destination. Japnese cultures are so unique that I must experinece it myself. <br/>
+          <p className = "mapdiscription"> Japan is my next travel destination. Japanese cultures are so unique that I must experinece it myself. <br/>
           <img id = "japanview" src = {sushi} alt = ""/><br/>Also, I always want to 
             try the traditional ramen and sushi as they are my favorites. 
             <br/><br/> <a className = "keyword"> Key words: Travel, Culture </a> </p>
-          </p>
+          </div>
         </content>
 
       </InfoWindow>}
